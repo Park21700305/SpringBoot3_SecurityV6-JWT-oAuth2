@@ -26,24 +26,24 @@
 //                .requestMatchers("/static/**");
 //    }
 //
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//@Bean
+//public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 //        return http
 //                .authorizeRequests()
-//                .requestMatchers("/login", "/signup", "/user").permitAll()
-//                .anyRequest().authenticated()
+//                    .requestMatchers("/login", "/signup", "/user").permitAll()
+//                    .anyRequest().authenticated()
 //                .and()
-//                .formLogin()
-//                .loginPage("/login")
-//                .defaultSuccessUrl("/articles")
-//                .and()
-//                .logout()
-//                .logoutSuccessUrl("/login")
-//                .invalidateHttpSession(true)
-//                .and()
-//                .csrf().disable()
-//                .build();
-//    }
+//                .formLogin(formLogin -> formLogin
+//                        .loginPage("/login")
+//                        .defaultSuccessUrl("/articles")
+//                )
+//                .logout(logout -> logout
+//                        .logoutSuccessUrl("/login")
+//                        .invalidateHttpSession(true)
+//                )
+//        .csrf(AbstractHttpConfigurer::disable)
+//        .build();
+//        }
 //
 //    @Bean
 //    public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailService userDetailService) throws Exception {
