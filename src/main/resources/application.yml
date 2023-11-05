@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    # ?? ?? ??
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    # ???  ?? ?? data.sql ??
+    defer-datasource-initialization: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID
+            client-secret: SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_SECRET
+            scope:
+                - email
+                - profile
+
+jwt:
+  issuer: JWT_ISSUER
+  secret_key: JWT_SECRET_KET
+
+
+
