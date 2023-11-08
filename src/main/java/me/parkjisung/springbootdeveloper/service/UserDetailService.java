@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper.service;
+package me.parkjisung.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
 import me.parkjisung.springbootdeveloper.domain.User;
