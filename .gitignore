@@ -1,8 +1,8 @@
 HELP.md
 .gradle
-src/**/application-db.yml
-src/**/application-outh2.yml
-src/**/application-jwt.yml
+src/main/resources/application-db.yml
+src/main/resources/application-oauth2.yml
+src/main/resources/application-jwt.yml
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
