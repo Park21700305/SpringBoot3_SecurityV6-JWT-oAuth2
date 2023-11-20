@@ -1,7 +1,7 @@
 //package me.parkjisung.springbootdeveloper.config;
 //
 //import lombok.RequiredArgsConstructor;
-//import me.shinsunyoung.springbootdeveloper.service.UserDetailService;
+//import me.parkjisung.springbootdeveloper.service.UserDetailService;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.authentication.AuthenticationManager;
