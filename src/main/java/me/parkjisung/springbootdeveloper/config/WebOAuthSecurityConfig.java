@@ -25,10 +25,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 public class WebOAuthSecurityConfig {
 
     // OAuth2UserCustomService, TokenProvider 등을 주입받는 생성자
-    OAuth2UserCustomService oAuth2UserCustomService;
-    TokenProvider tokenProvider;
-    RefreshTokenRepository refreshTokenRepository;
-    UserService userService;
+    private final OAuth2UserCustomService oAuth2UserCustomService;
+    private final TokenProvider tokenProvider;
+    private final RefreshTokenRepository refreshTokenRepository;
+    private final UserService userService;
 
     // 정적 자원 및 H2 콘솔 관련 설정
     @Bean

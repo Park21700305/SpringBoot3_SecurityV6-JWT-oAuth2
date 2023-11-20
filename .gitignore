@@ -1,5 +1,8 @@
 HELP.md
 .gradle
+application-db.yml
+application-outh2.yml
+application-jwt.yml
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
